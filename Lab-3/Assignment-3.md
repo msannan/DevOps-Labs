@@ -21,10 +21,10 @@
   - Entrypoint: The ENTRYPOINT specifies a command that will always be executed when the container starts.
 
 # Improve the Dockerfile for python Application given in slides using the Dockerfile & then improve it and share image size & estimated build time for it
-   FROM python:3.6-alpine
-   COPY . /
-   RUN pip3 install --upgrade pip 
-   CMD ["python3" ,"app.py"]
+    FROM python:3.6-alpine
+    COPY . /
+    RUN pip3 install --upgrade pip 
+    CMD ["python3" ,"app.py"]
 
 
    Bad-Practise image took: 172.5 s
