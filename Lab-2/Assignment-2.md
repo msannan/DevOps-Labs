@@ -27,4 +27,5 @@
   `docker container run -d --name assignment-2 -p 9090:80 --net assignment-2 -v /Users/sannan/data:/usr/share/nginx/html nginx`
 # Command to exec into the above container and replace the default index.html to a custom one, which says that â€œI am becoming a Docker Expertâ€ and it should be persisted for the next times.
   `echo "<html\><head><title>Learn Docker</title></head><body><h1>I am becomming a docker expert</h1></body></html>" > /tmp/index.html`
-  `docker cp index.html 310bf2a8b4b1:/usr/share/nginx/html/index.html`
+  
+  `docker cp index.html assignment-2:/usr/share/nginx/html/index.html`
