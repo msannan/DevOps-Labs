@@ -1,7 +1,6 @@
-**All of the phases list below are completed and maintained in frontend and backend repo's
+**All of the phases list below are completed and maintained in frontend and backend repo's**
   Frontend Repo: `https://github.com/msannan/DevOps-Project-Backend`
   Backend Repo: `https://github.com/msannan/DevOps-Project-Frontend`
-**
 
 # Project Phase 1 - Docker Compose
 
