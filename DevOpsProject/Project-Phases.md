@@ -1,5 +1,7 @@
 **All of the phases list below are completed and maintained in frontend and backend repo's**
+
   Frontend Repo: `https://github.com/msannan/DevOps-Project-Backend`
+  
   Backend Repo: `https://github.com/msannan/DevOps-Project-Frontend`
 
 # Project Phase 1 - Docker Compose
@@ -15,6 +17,7 @@ So you will have at least 2 repositories based on the number of your microservic
 
 1. **Backend**: Exposes an API endpoint. This repo will contain the backend code, Dockerfile to build image, Docker Compose file to deploy backend and the database.
    `https://github.com/msannan/DevOps-Project-Backend/blob/main/docker-compose.yaml`
+   
 2. **Frontend**: Calls the backend and displays the result. This repo will contain the frontend code, Dockerfile to build image, Docker Compose file to deploy frontend, backend, database or any other microservice if added. This will deploy the complete application.
    `https://github.com/msannan/DevOps-Project-Frontend/blob/main/docker-compose.yaml`
  
@@ -26,7 +29,9 @@ The microservices each should have their own Github repository.
 - Better to add both Github Actions Workflow and Jenkins but one of them is compulsory
 - Whenever some changes are pushed, the pipeline runs, it builds the docker image and pushes to Dockerhub
 - You can then update your docker-compose file with new image and run it, and see the updated feature.
+
 **Frontend-CI/CD:**`https://github.com/msannan/DevOps-Project-Frontend/blob/main/Jenkinsfile`
+
 **Backend-CI/CD:** `https://github.com/msannan/DevOps-Project-Backend/blob/main/Jenkinsfile`
 
 For a sample golang-app, you can see the Github Actions workflow at
@@ -49,7 +54,9 @@ When the pipeline of any of your microservice runs, it will build & push a new d
 The Kubernetes manifest should include
 - Deployment file with custom labels, annotations
 - Service: exposing frontend on NodePort and backend on Cluster IP
+
 **Frontend-CI/CD:** `https://github.com/msannan/DevOps-Project-Frontend/tree/main/K8s` 
+
 **Backend-CI/CD:** `https://github.com/msannan/DevOps-Project-Backend/tree/main/K8s`
 
 # Project Phase 4 - K8s
