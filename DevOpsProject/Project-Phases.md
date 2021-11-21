@@ -26,8 +26,8 @@ The microservices each should have their own Github repository.
 - Better to add both Github Actions Workflow and Jenkins but one of them is compulsory
 - Whenever some changes are pushed, the pipeline runs, it builds the docker image and pushes to Dockerhub
 - You can then update your docker-compose file with new image and run it, and see the updated feature.
-**Frontend-CI/CD:`https://github.com/msannan/DevOps-Project-Frontend/blob/main/Jenkinsfile` **
-**Backend-CI/CD:`https://github.com/msannan/DevOps-Project-Backend/blob/main/Jenkinsfile` **
+**Frontend-CI/CD:**`https://github.com/msannan/DevOps-Project-Frontend/blob/main/Jenkinsfile`
+**Backend-CI/CD:** `https://github.com/msannan/DevOps-Project-Backend/blob/main/Jenkinsfile`
 
 For a sample golang-app, you can see the Github Actions workflow at
 https://github.com/kahootali/golang-sample-app/tree/master/.github/workflows
@@ -49,8 +49,8 @@ When the pipeline of any of your microservice runs, it will build & push a new d
 The Kubernetes manifest should include
 - Deployment file with custom labels, annotations
 - Service: exposing frontend on NodePort and backend on Cluster IP
-**Frontend-CI/CD:`https://github.com/msannan/DevOps-Project-Frontend/tree/main/K8s` **
-**Backend-CI/CD:`https://github.com/msannan/DevOps-Project-Backend/tree/main/K8s` **
+**Frontend-CI/CD:** `https://github.com/msannan/DevOps-Project-Frontend/tree/main/K8s` 
+**Backend-CI/CD:** `https://github.com/msannan/DevOps-Project-Backend/tree/main/K8s`
 
 # Project Phase 4 - K8s
 You can create any number of microservices you want (2 at least), Better is one of them should connect to database. If you are uncomfortable with coding, You can use the code that was presented in the class(Frontend & Backend)
